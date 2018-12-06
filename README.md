@@ -40,7 +40,7 @@ El sitema además cuenta con conexión a internet para hacer una publicación en
  
  **1. Conectar el módulo ethernet de la siguiente manera**
 
- ![](/Imagenes/diagrama.png)
+ ![](/Imagenes/diagrama1.png)
 
 
  **2. Importar las librerias en los IDE correspondientes**
