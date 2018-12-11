@@ -2,9 +2,9 @@
 
 ## Descripción del proyecto
 
-El presente proyecto consiste en un sistema de riego automatico el cuál cuenta con un sensor de humedad del suelo para establecer cuando activar y desactivar la bomba de agua que riega la planta.
+El presente proyecto consiste en un sistema de riego automatico el cuál cuenta con un sensor de humedad del suelo, un sensor de temperatura y un sensor de luz para establecer cuando activar y desactivar una bomba de agua que riega una planta.
 
-El sitema además cuenta con conexión a internet para hacer una publicación en Twitter cada vez que riega con la información de la temperatura y la humedad.
+El sitema además cuenta con conexión a internet para hacer una publicación en Twitter con los resultados de la temperatura, la luz, y la humedad.
 
 ## Información general de los autores
 
@@ -26,24 +26,46 @@ El sitema además cuenta con conexión a internet para hacer una publicación en
 ## Pre-requisitos 
 ### Materiales
 > * Protoboard
-> * Arduino MEGA
+> * Arduino UNO
 > * Sensor de humedad del suelo
+> * Fotoresistencia
+> * Sensor temperatura
 > * Mini bomba de agua
+> * Manguera de nivel
 > * Driver L298 Dual Puente-H Motor
 > * Controlador de ethernet ENC28J60
-> * Manguera de nivel
+> * Cable ethernet
+
+![](/Imagenes/materiales.jpg)
  
  ### Librerías Arduino
- **<EtherCard.h>** para controlador de ethernet - disponible [aquí](https://github.com/njh/EtherCard)
+ **<EtherCard.h>** para módulo de ethernet - disponible [aquí](https://github.com/njh/EtherCard)
  
  ## Procedimiento
  
  **1. Conectar el módulo ethernet de la siguiente manera**
 
- ![](/Imagenes/diagrama1.png)
+ ![](/Imagenes/moduloesquema.png)
+ ![](/Imagenes/moduloesquema2.jgp)
 
+ **2. Conectar el cable ethernet al modulo y al router**
 
- **2. Importar las librerias en los IDE correspondientes**
+ **3. Conectar la bomba de agua en el pin digital 4 de la siguiente manera**
+
+ ![](/Imagenes/bombaesquema.jpg)
+
+ **4. Conectar a la bomba la manguera de nivel y sumergirla en agua**
+
+ **5. Conectar con ayuda del protoboard la resistencia al pin A0, el sensor de tierra al pin A1 y el sensor de temperatura al pin A2**
+
+ **6. Insertar en la maceta el sensor de humedad y la manguera de nivel**
+
+ **7. Importar la libreria en el IDE de arduino**
  
- **3. Descargar y ejecutar los códigos en las clases correspondientes**
+ **8. Descargar y ejecutar el código SensoresConActuador.ino en el IDE de arduino**
+
+## Resultados
+
+ ![](/Imagenes/fotofinal.jpg)
+ ![](/Imagenes/capturafinal.jpg)
 
