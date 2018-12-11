@@ -46,7 +46,7 @@ El sitema además cuenta con conexión a internet para hacer una publicación en
  **1. Conectar el módulo ethernet de la siguiente manera**
 
  ![](/Imagenes/moduloesquema.png)
- ![](/Imagenes/moduloesquema2.jgp)
+ ![](/Imagenes/moduloesquema2.jpg)
 
  **2. Conectar el cable ethernet al modulo y al router**
 
